@@ -1,0 +1,79 @@
+/*
+ * *** You can say something about your file if you need it!
+ * Template Name
+ * Description
+ * Vertion
+ * Copyright
+ * Author
+ * Last Modified Date
+ *
+ */
+/*-------------------------*/
+/* $Catalog 
+---------------------------*/
+/** 
+ * Catalog
+ * Font import
+ * Reset
+ * Color
+ * Typography
+ * Icons
+ * Utility
+**/
+
+/*-----------------*/
+/* $Font import
+/*-----------------*/
+
+/*-----------------*/
+/* $Reset
+/*-----------------*/
+
+/*-----------------*/
+/* $Typography
+/*-----------------*/
+
+/*-----------------*/
+/* $Icons
+/*-----------------*/
+
+/*-----------------*/
+/* $Utility
+/*-----------------*/
+
+/*Hidden
+  ========================================================
+
+  /**
+   *Add the correct display in IE 10-,
+   */
+
+  [hidden] {
+  	display: none;
+  }
+
+/*-----------------*/
+/* $Color
+-----------------*/
+/*background color*/
+.bg-color-default{background-color: #d1d1d1;}
+.bg-color-primary{background-color: #d1d1d1;}
+
+
+/*-----------------*/
+/* $Typography
+-----------------*/
+
+/*-----------------*/
+/* $Icons
+-----------------*/
+
+/*-----------------*/
+/* $Utility
+-----------------*/
+
+.u-margin-sm{margin: 8px;}
+.u-margin-md{margin: 8px;}
+.u-margin-lg{margin: 8px;}
+
+

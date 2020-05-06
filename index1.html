@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="navbar u-cf" >
+			<!-- navbar導覽頁的意思 -->
+			<div class="container">
+				<div class="logo">
+					<a href="#">
+						<img src="logo.svg" alt="">
+					</a>
+				</div>
+				<!-- 列表寫法使用ulli -->
+				<ul class="menu" >
+					<li>
+						<a href="#" class="current">首頁</a>
+					</li>
+					<li>
+						<a href="#">關於</a>
+						<ul class="dropdown" >
+							<li><a href="#">公司簡介</a></li>
+							<li><a href="#">經營理念</a></li>
+							<li><a href="#">社會關懷</a></li>
+							<li><a href="#">銷售據點</a></li>
+							<li><a href="#">大事紀</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">產品</a>
+						<ul class="dropdown" >
+							<li><a href="#">產品頁面001</a></li>
+							<li><a href="#">產品頁面002</a></li>
+							<li><a href="#">產品頁面003</a></li>
+							<li><a href="#">產品頁面004</a></li>
+							<li><a href="#">產品頁面005</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">聯絡我們</a>
+					</li>
+				</ul>
+				<!-- 利用emmet插鍵特性ul>li再按tab鍵，就是第一層是ul，第二層是li
+			ul>(li>a)*5，就是ul底下的li和a連結有五個
+			ul>(li>a{文字})*5，就是裡面會自動再加上五個文字
+			文字中替換成$字號就是按順序排的數字1234... -->
+			</div>
+		</header>
+	</div>
+</body>
+</html>

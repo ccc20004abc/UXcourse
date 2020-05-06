@@ -1,0 +1,121 @@
+/*globel */
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 微軟正黑體, arial;
+}
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*grid*/
+.container{
+	width: 1170px;
+	margin: 0 auto;
+	/*border: 1px solid #999*/
+	padding: 0 24px;
+}
+
+
+.u-cf:after{
+	/*cf=clear fix 清除浮動*/
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+/*component*/
+.navbar{
+	background-color: #3a3a3a;
+}
+
+.navbar .logo{
+	float: left;
+	height: 24px;
+	margin-top: 28px;
+}
+
+.navbar .logo img{
+	height: 100%;
+}
+
+.menu{
+	float: right;
+}
+
+
+.menu > li{
+	float: left;
+}
+
+.menu > li >a{
+	display: block;
+	line-height: 24px;
+	padding: 28px 16px;
+	/*一般都是8的倍數單位，padding比margin好的原因是，可以讓點擊的範圍變大，margin會算在盒模型外面*/
+	margin-right: 4px;
+	color: #fff;
+}
+
+.menu > li >a:after{
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 2px;
+	background-color: #ff5e41;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 0.3s;
+}
+
+.menu > li:hover > a:after, .menu > li >a.current:after{
+	width: 100%;
+}
+
+.menu .dropdown{
+	position: absolute;
+	left: 50%;
+	top: 105%;
+	transform: translateX(-50%);
+	width: 200px;
+	background-color: #3a3a3a;
+
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+}
+
+.menu > li:hover .dropdown{
+	opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+
+.menu .dropdown > li >a{
+	display: block;
+	line-height: 24px;
+	padding: 8px 24px;
+	color: #fff;
+	width: 200px;
+	transition: all 0.2s;
+}
+
+
+.menu .dropdown > li >a:hover{
+	background-color: #ff5e41;
+}
