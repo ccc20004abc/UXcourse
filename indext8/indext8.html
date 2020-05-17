@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>Document8</title>
+	<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<!-- rest ../是回到上一層的意思-->
+	<link rel="stylesheet" href="../reset.css">
+	<!-- plugins -->
+	<link rel="stylesheet" href="css/plugins/owl carousel/owl.carousel.min.css">
+	<!-- <link rel="stylesheet" href="css/plugins/owl carousel/owl.theme.default.css"> -->
+	<!-- custom -->
+	<link rel="stylesheet" href="css/style8.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- start jumbotron -->
+		<div class="jumbotron owl-carousel owl-theme">
+			<div class="jumbotron__item">
+				<div class="image" style="background-image: url('image/photo1.jpg')"></div>
+			</div>
+			<div class="jumbotron__item">
+				<div class="image" style="background-image: url('image/photo2.jpg')"></div>
+			</div>
+			<div class="jumbotron__item">
+				<div class="image" style="background-image: url('image/photo3.jpg')"></div>
+			</div>
+			<div class="jumbotron__item">
+				<div class="image" style="background-image: url('image/photo1.jpg')"></div>
+			</div>
+			<div class="jumbotron__item">
+				<div class="image" style="background-image: url('image/photo4.jpg')"></div>
+			</div>
+		</div>
+		<!-- end jumbotron structure -->
+	</div>
+
+	<!-- js -->
+	<script src="js/plugins/jquery/jquery-3.2.1.min.js"></script>
+	<script src="js/plugins/owl carousel/owl.carousel.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	  	$('.owl-carousel').owlCarousel({
+			loop:true,
+			nav:true,
+			items: 1,
+			navText: [],
+			autoplay: true,
+			autoplaySpeed: 1000,
+			smartSpeed: 500
+		})
+	});
+	</script>
+
+</body>
+</html>
