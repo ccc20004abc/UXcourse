@@ -28,18 +28,25 @@
 	background-color: #fff;
 	box-shadow: 0 3px 10px rgba(0,0,0,0.5);
 	opacity: 0.5;
+	transition: all 0.3s;
 }
 
-.owl-theme .owl-nav .owl-prev:hover,.owl-theme .owl-nav .owl-next{
+.owl-theme .owl-nav .owl-prev:hover,.owl-theme .owl-nav .owl-next:hover{
 	opacity: 1;
 }
 
 .owl-theme .owl-nav .owl-prev{
-
+	left: 24px;
+	background-image: url("image/slider-arrows.png");
+	background-size: cover;
+	background-position: right;
 }
 
 .owl-theme .owl-nav .owl-next{
-
+	right: 24px;
+	background-image: url("image/slider-arrows.png");
+	background-size: cover;
+	background-position: left;
 }
 
 .owl-theme .owl-dots{
